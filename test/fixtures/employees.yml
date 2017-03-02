@@ -1,7 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
+  first_name: '大島'
+  last_name: '孝之'
+  email: 'takayuki.ohshima@example.com'
 
 two:
-  name: MyString
+  first_name: '松山'
+  last_name: '新谷'
+  email: 'shinya.matsuyama@example.com'
+
+three:
+  first_name: '高畑'
+  last_name: '茂雄'
+  email: 'shigeo.takahata@example.com'
