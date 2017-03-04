@@ -1,7 +1,4 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  domain: hoge.example.com
-
-two:
-  domain: hage.example.com
+domain:
+  domain: domain.example.com

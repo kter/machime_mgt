@@ -1,16 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+ohshima:
   first_name: '大島'
   last_name: '孝之'
   email: 'takayuki.ohshima@example.com'
 
-two:
+matsuyama:
   first_name: '松山'
   last_name: '新谷'
   email: 'shinya.matsuyama@example.com'
 
-three:
+takahata:
   first_name: '高畑'
   last_name: '茂雄'
   email: 'shigeo.takahata@example.com'

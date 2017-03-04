@@ -1,7 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+office_2011:
   name: "Office 2011 for Mac"
 
-two:
+office_2016:
   name: "Office 2016 for Mac"
+
+adobe_illustrator:
+  name: "Adobe illustrator"
+
+adobe_photoshop:
+  name: "Adobe Photoshop"
