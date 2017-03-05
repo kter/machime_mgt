@@ -1,0 +1,2 @@
+class PcSoftware < ApplicationRecord
+end
