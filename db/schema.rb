@@ -10,23 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170305043618) do
+ActiveRecord::Schema.define(version: 20170304041823) do
 
   create_table "employees", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "name"
     t.string   "email"
     t.string   "first_name"
     t.string   "last_name"
-  end
-
-  create_table "pc_softwares", force: :cascade do |t|
-    t.integer  "pc_id",       null: false
-    t.integer  "software_id", null: false
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.index ["pc_id"], name: "index_pc_softwares_on_pc_id"
-    t.index ["software_id"], name: "index_pc_softwares_on_software_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "pcs", force: :cascade do |t|
@@ -55,8 +47,10 @@ ActiveRecord::Schema.define(version: 20170305043618) do
 
   create_table "softwares", force: :cascade do |t|
     t.string   "name"
+    t.integer  "pc_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["pc_id"], name: "index_softwares_on_pc_id"
   end
 
 end
