@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170304034805) do
+ActiveRecord::Schema.define(version: 20170305043618) do
 
   create_table "employees", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -18,6 +18,33 @@ ActiveRecord::Schema.define(version: 20170304034805) do
     t.string   "email"
     t.string   "first_name"
     t.string   "last_name"
+  end
+
+  create_table "pc_softwares", force: :cascade do |t|
+    t.integer  "pc_id",       null: false
+    t.integer  "software_id", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["pc_id"], name: "index_pc_softwares_on_pc_id"
+    t.index ["software_id"], name: "index_pc_softwares_on_software_id"
+  end
+
+  create_table "pcs", force: :cascade do |t|
+    t.integer  "classification"
+    t.string   "name"
+    t.string   "cpu"
+    t.integer  "memory"
+    t.integer  "disk_class"
+    t.integer  "disk"
+    t.string   "mac_address"
+    t.string   "ip_address"
+    t.integer  "employee_id"
+    t.integer  "software_id"
+    t.text     "note"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+    t.index ["employee_id"], name: "index_pcs_on_employee_id"
+    t.index ["software_id"], name: "index_pcs_on_software_id"
   end
 
   create_table "preferences", force: :cascade do |t|
