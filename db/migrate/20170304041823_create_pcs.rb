@@ -9,8 +9,6 @@ class CreatePcs < ActiveRecord::Migration[5.0]
       t.integer :disk
       t.string :mac_address
       t.string :ip_address
-      t.reference :employee
-      t.reference :software
       t.text :note
 
       t.timestamps
