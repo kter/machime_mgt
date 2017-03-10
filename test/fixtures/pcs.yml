@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+ohshima_pc:
+  classification: 1
+  name: 'one's pc'
+  cpu: 'Intel i5-3775'
+  memory: 1
+  disk_class: 1
+  disk: 1
+  mac_address: 'aa:bb:cc:dd:ee:ff'
+  ip_address: '192.168.0.254'
+  employee: ohshima
+  software: office_2016, adobe_illustrator
+  note: 'テスト作成'
+
+matsuyama_pc:
+  classification: 2
+  name: 'one's pc'
+  cpu: 'Intel i5-3660'
+  memory: 2
+  disk_class: 2
+  disk: 2
+  mac_address: 'aa:bb:cc:dd:ee:gg'
+  ip_address: '192.168.0.253'
+  employee: matsuyama
+  software: office_2011, adobe_photoshop
+  note: 'テスト作成'
